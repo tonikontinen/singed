@@ -1,0 +1,55 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Room Schema",
+  "description": "Schema for validating room data in the game",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "name", "description", "connections"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier for the room"
+      },
+      "name": {
+        "type": "string",
+        "description": "Display name of the room"
+      },
+      "description": {
+        "type": "string",
+        "description": "Detailed description of the room"
+      },
+      "connections": {
+        "type": "object",
+        "description": "Available exits from the room",
+        "patternProperties": {
+          "^[a-zA-Z-]+$": {
+            "type": "string",
+            "description": "ID of the connected room"
+          }
+        }
+      },
+      "interactables": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["name", "description", "interaction"],
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the interactive item"
+            },
+            "description": {
+              "type": "string",
+              "description": "Visual description of the item"
+            },
+            "interaction": {
+              "type": "string",
+              "description": "What happens when player interacts with item"
+            }
+          }
+        }
+      }
+    }
+  }
+}
