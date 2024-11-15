@@ -1,0 +1,23 @@
+[
+  {
+    "id": "entrance_hall",
+    "name": "Entrance Hall",
+    "description": "A grand entrance hall with marble floors and a dusty chandelier. Faded portraits line the walls. In the centre of the hall sprawls an enormous wooden staircase",
+    "connections": {
+      "north": "kitchen",
+      "west": "library"
+    },
+    "interactables": [
+      {
+        "name": "chandelier",
+        "description": "A crystal chandelier hanging from the high ceiling, covered in cobwebs.",
+        "interaction": "You examine the chandelier closely. Despite the dust, you can still see its former magnificence. Some crystals seem loose..."
+      },
+      {
+        "name": "portraits",
+        "description": "Stern-looking portraits of people in antiquated clothing.",
+        "interaction": "Looking closer at the portraits, you notice they all share the same striking green eyes. The dates beneath them span over 200 years."
+      }
+    ]
+  }
+]
