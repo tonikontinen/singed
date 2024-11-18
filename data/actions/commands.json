@@ -1,0 +1,13 @@
+{
+  "inspect_synonyms": [
+    "inspect",
+    "examine",
+    "check",
+    "observe",
+    "investigate",
+    "analyze",
+    "scrutinize",
+    "look at"
+  ],
+  "move_synonyms": ["go", "move", "walk", "head", "travel"]
+}
